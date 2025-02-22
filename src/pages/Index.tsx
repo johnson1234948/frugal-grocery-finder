@@ -16,19 +16,26 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="flex justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/47ea5391-2909-447b-a897-12e521abd611.png"
-                  alt="Chytrý nákupní seznam"
-                  className="h-24 md:h-32 w-auto"
-                />
+              <div className="relative mb-12">
+                <motion.div
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full"
+                >
+                  <img 
+                    src="/lovable-uploads/47ea5391-2909-447b-a897-12e521abd611.png"
+                    alt="Chytrý nákupní seznam"
+                    className="h-16 md:h-20 w-auto"
+                  />
+                </motion.div>
+                <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10">
+                  Ušetřete na nákupech
+                </span>
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                  Chytrý nákupní seznam
+                </h1>
               </div>
-              <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10">
-                Ušetřete na nákupech
-              </span>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                Chytrý nákupní seznam
-              </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Porovnejte ceny napříč obchody a ušetřete až 50 % na vašich nákupech. Už nikdy neplaťte víc, než musíte.
               </p>
