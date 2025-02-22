@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { ShoppingBag, DollarSign, List, ChartBar } from "lucide-react";
+import { ShoppingBag, DollarSign, ChartBar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -17,16 +17,16 @@ const Index = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-primary uppercase rounded-full bg-primary/10">
-                Save Money on Groceries
+                Ušetřete na nákupech
               </span>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                Find the Best Deals Across All Stores
+                Najděte nejlepší ceny ve všech obchodech
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Compare prices across multiple stores and save up to 50% on your grocery shopping. Never overpay again.
+                Porovnejte ceny napříč obchody a ušetřete až 50 % na vašich nákupech. Už nikdy neplaťte víc, než musíte.
               </p>
               <Button size="lg" className="rounded-full animate-float">
-                Start Saving Today
+                Začněte šetřit ještě dnes
               </Button>
             </motion.div>
           </div>
@@ -36,26 +36,19 @@ const Index = () => {
       {/* Features Section */}
       <section className="py-20">
         <div className="container px-4 mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="feature-card p-6">
               <ShoppingBag className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Compare Stores</h3>
+              <h3 className="text-xl font-semibold mb-2">Porovnání obchodů</h3>
               <p className="text-muted-foreground">
-                Find the best prices across multiple stores in your area instantly.
+                Okamžitě najděte nejlepší ceny v různých obchodech ve vašem okolí.
               </p>
             </Card>
             <Card className="feature-card p-6">
               <DollarSign className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Save Money</h3>
+              <h3 className="text-xl font-semibold mb-2">Úspora peněz</h3>
               <p className="text-muted-foreground">
-                Save up to 50% on your grocery shopping by finding the best deals.
-              </p>
-            </Card>
-            <Card className="feature-card p-6">
-              <List className="w-12 h-12 text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Smart Lists</h3>
-              <p className="text-muted-foreground">
-                Create and manage shopping lists that automatically find the best deals.
+                Ušetřete až 50 % na vašich nákupech díky nalezení nejlepších nabídek.
               </p>
             </Card>
           </div>
@@ -67,10 +60,10 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Compare Prices Across All Major Stores
+              Porovnejte ceny ve všech hlavních obchodech
             </h2>
             <p className="text-lg text-muted-foreground">
-              Get real-time price comparisons from your favorite stores
+              Získejte aktuální srovnání cen z vašich oblíbených obchodů
             </p>
           </div>
           <div className="relative">
@@ -78,20 +71,12 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <h3 className="text-2xl font-semibold mb-4">
-                    Smart Price Tracking
+                    Chytré sledování cen
                   </h3>
                   <ul className="space-y-4">
                     <li className="flex items-center gap-3">
                       <ChartBar className="w-5 h-5 text-primary" />
-                      <span>Real-time price updates</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <ChartBar className="w-5 h-5 text-primary" />
-                      <span>Historical price trends</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <ChartBar className="w-5 h-5 text-primary" />
-                      <span>Price drop alerts</span>
+                      <span>Aktualizace cen v reálném čase</span>
                     </li>
                   </ul>
                 </div>
@@ -99,7 +84,7 @@ const Index = () => {
                   {/* Placeholder for comparison chart/visualization */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-muted-foreground">
-                      Interactive Price Comparison Chart
+                      Interaktivní graf porovnání cen
                     </span>
                   </div>
                 </div>
@@ -114,13 +99,13 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <Card className="max-w-4xl mx-auto text-center p-12 feature-card">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Start Saving?
+              Připraveni začít šetřit?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join thousands of smart shoppers who save money every day
+              Připojte se k tisícům chytrých nakupujících, kteří šetří každý den
             </p>
             <Button size="lg" className="rounded-full">
-              Get Started Now
+              Začít nyní
             </Button>
           </Card>
         </div>
